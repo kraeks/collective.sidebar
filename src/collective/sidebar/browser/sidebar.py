@@ -345,6 +345,8 @@ class SidebarViewlet(ViewletBase):
             context = api.portal.get_navigation_root(context)
         contents = []
         if IFolderish.providedBy(context):
+            if INavigationEndpoint.providedBy(context):
+                context = context.aq_parent
             contents = context.getFolderContents()
         else:
             # Can not remember what edgecase we catch here.
