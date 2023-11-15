@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6.0 (unreleased)
+1.6.0 (2023-11-15)
 ------------------
 
 Added:
@@ -19,6 +19,7 @@ Bugfixes:
 
 - Check if navigation item needs view action.
   [santonelli]
+- Check INavigationEndpoint provided by context [lwalther]
 
 
 1.5.0 (2021-04-15)
